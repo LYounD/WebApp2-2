@@ -7,6 +7,7 @@ body {
 	background-image: url("background.jpg");
 	background-repeat: no-repeat;
 	background-position: 100% 0%;
+	background-attachment: fixed;
 }
 
 h1 {
@@ -56,7 +57,7 @@ a:hover	{
 }
 
 table, td, th{ 
-	border: 2px solid white;
+	border: 2px dotted white;
 }
 
 table {
@@ -68,6 +69,6 @@ table {
 }
 
 img {
-	border: medium ridge #F7931E;
+	border:medium ridge #F7931E;
 }
 
