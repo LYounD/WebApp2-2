@@ -1,0 +1,38 @@
+.section1 {
+	border: 5px solid green;
+	background-color: white;
+}
+
+.mini_section {
+	border: 5px solid red;
+	text-align: right;
+}
+
+.first_h2{
+	border: 5px solid yellow;
+}
+
+.small_section {
+	border: 5px solid blue;
+	background-color: #99CCFF;
+	padding: 5px;
+	margin-top: 10px;
+	overflow: hidden;
+	text-align: justify;
+
+}
+
+.word {
+	border: 5px solid purple;
+}
+
+.images {
+	float: right;
+}
+
+body {
+	background-image: url(http://selab.hanyang.ac.kr/courses/cse326/2017/labs/images/3/blueTextureBG.jpg); 
+	align-content: center;
+	margin-left: 10%;
+	margin-right: 10%;
+}
