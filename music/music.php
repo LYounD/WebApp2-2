@@ -16,10 +16,20 @@
 		<?php
 		$song_count = "5678";
 		$news_page = 1;
-		$newspages = $GET["newspages"];
-		if (!isset($GET["newspages"])){
+		$newspages = $_GET["newspages"];
+
+		if (!isset($_GET["newspages"])){
 			$newspages = 5;
 		}
+
+		$text = file_get_contents("favorite.txt");
+		$artists = explode("\n", $text);
+
+		$musices = glob("lab5/musicPHP/songs/*.mp3");
+
+		$playlist_text = glob("lab5/musicPHP/songs/*.m3u");
+		
+
 		?>
 		<p>
 			I love music.
@@ -45,9 +55,11 @@
 			<h2>My Favorite Artists</h2>
 		
 			<ol>
-				<li>Guns N' Roses</li>
-				<li>Green Day</li>
-				<li>Blink182</li>
+				<?php foreach ($artists as $artist) { ?>
+				<li> <a href="http://en.wikipedia.org/wiki/<?= "$artist" ?>">
+					<?= $artist  ?></a>
+				 </li>
+				 <?php } ?>
 			</ol>
 		</div>
 		
@@ -55,29 +67,61 @@
 		<!-- Ex 7: MP3 Formatting -->
 		<div class="section">
 			<h2>My Music and Playlists</h2>
-
 			<ul id="musiclist">
+				<?php 
+					
+					foreach ($musices as $music) { ?>
 				<li class="mp3item">
-					<a href="lab5/musicPHP/songs/paradise-city.mp3">paradise-city.mp3</a>
+					<?= basename($music) ?> (<?= (int)(filesize($music)/1024) ?> KB)
 				</li>
+				<?php } ?>
 				
-				<li class="mp3item">
-					<a href="lab5/musicPHP/songs/basket-case.mp3">basket-case.mp3</a>
-				</li>
-
-				<li class="mp3item">
-					<a href="lab5/musicPHP/songs/all-the-small-things.mp3">all-the-small-things.mp3</a>
-				</li>
+				
 
 				<!-- Exercise 8: Playlists (Files) -->
-				<li class="playlistitem">326-13f-mix.m3u:
+
+
+
+				<?php #foreach ($playlist_text as $playlist) {
+					#$content_list = file($playlist);
+					#print_r($content_list);
+				#?>
+				<!--
+				<li class="playlistitem"><?= basename($playlist);  ?>
+					<ul> -->
+						<? #foreach ($content_list as $con_playlist) {
+								#$compare = '#';
+								#$pos = strpos($con_playlist, $compare);
+								#if ($pos === false){ ?> 
+								
+
+
+
+				<?php foreach ($playlist_text as $playlist) {
+					$content_playlist = file($playlist);
+				?>
+
+				<li class="playlistitem"><?= basename($playlist); ?>
 					<ul>
-						<li>Basket Case.mp3</li>
-						<li>All the Small Things.mp3</li>
-						<li>Just the Way You Are.mp3</li>
-						<li>Pradise City.mp3</li>
-						<li>Dreams.mp3</li>
+						<? foreach ($content_playlist as $con_playlist) {
+								$compare = '#';
+								$pos = strpos($con_playlist, $compare);
+								if ($pos === false){
+								
+						?>
+						<li>
+							<? 
+								print("$con_playlist"); 
+							?>
+						</li>
+						<?
+							}
+						}
+						?>
 					</ul>
+					<?
+						}
+					 ?>
 			</ul>
 		</div>
 
