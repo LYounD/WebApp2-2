@@ -27,7 +27,7 @@
 
 		$musices = glob("lab5/musicPHP/songs/*.mp3");
 
-		$playlist_text = glob("lab5/musicPHP/songs/*.m3u");
+		$playlist_text = array_reverse(glob("lab5/musicPHP/songs/*.m3u")) ;
 		
 
 		?>
@@ -69,39 +69,24 @@
 			<h2>My Music and Playlists</h2>
 			<ul id="musiclist">
 				<?php 
-					
-					foreach ($musices as $music) { ?>
+					$music_array = array();
+					foreach ($musices as $music) { 
+						array_push($music_array, array('size'=> filesize($music), 'name'=> $music));
+					}
+					arsort($music_array);
+					foreach ($music_array as $music) {
+						?>
 				<li class="mp3item">
-					<?= basename($music) ?> (<?= (int)(filesize($music)/1024) ?> KB)
+					<a href="<?= $music['name'] ?>" target="_blank" download><?= basename($music['name']) ?></a> (<?= (int)($music['size']/1024) ?> KB)
 				</li>
 				<?php } ?>
-				
-				
-
 				<!-- Exercise 8: Playlists (Files) -->
-
-
-
-				<?php #foreach ($playlist_text as $playlist) {
-					#$content_list = file($playlist);
-					#print_r($content_list);
-				#?>
-				<!--
-				<li class="playlistitem"><?= basename($playlist);  ?>
-					<ul> -->
-						<? #foreach ($content_list as $con_playlist) {
-								#$compare = '#';
-								#$pos = strpos($con_playlist, $compare);
-								#if ($pos === false){ ?> 
-								
-
-
-
 				<?php foreach ($playlist_text as $playlist) {
 					$content_playlist = file($playlist);
+					shuffle($content_playlist);
 				?>
 
-				<li class="playlistitem"><?= basename($playlist); ?>
+				<li class="playlistitem"><?= basename($playlist); ?> :
 					<ul>
 						<? foreach ($content_playlist as $con_playlist) {
 								$compare = '#';
@@ -121,7 +106,8 @@
 					</ul>
 					<?
 						}
-					 ?>
+					?>
+				</li>
 			</ul>
 		</div>
 
