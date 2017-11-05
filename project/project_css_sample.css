@@ -1,0 +1,38 @@
+nav li{
+	list-style-type: none;
+	
+	margin-bottom: 10px;
+
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+	border: 2px solid black;
+
+	text-align: right;
+	padding-right: 2px;
+	vertical-align: initial;
+
+	height: 35px;
+	width: 85px;
+}
+
+ul{
+	padding: 0;
+
+}
+
+
+
+nav {
+	margin-left: 20px;
+	float: left;
+
+}
+
+article {
+	margin-left: 110px;
+	border: 2px solid blue;
+}
+
+body {
+	overflow: hidden;
+}
