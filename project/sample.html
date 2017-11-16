@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="en-gb">
+<head>
+                 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0">
+            <meta name="robots" content="noindex, follow" />
+    <base href="https://demo.gavick.com/joomla3/hotel/index.php" />
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <meta name="generator" content="Joomla! - Open Source Content Management" />
+   <title>Villa Bellucci - Joomla! Hotel Template</title>
+   <link href="/joomla3/hotel/?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
+   <link href="/joomla3/hotel/?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
+   <link href="https://demo.gavick.com/joomla3/hotel/templates/gk_hotel/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+   <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700" rel="stylesheet" type="text/css" />
+   <link href="//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic" rel="stylesheet" type="text/css" />
+   <link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
+   <link href="/joomla3/hotel/cache/gk/4278fe10a2fa077db32bbdc5980e1959.css.php" rel="stylesheet" type="text/css" />
+   <link href="https://demo.gavick.com/joomla3/hotel/modules/mod_image_show_gk4/styles/gk_hotel_tabs/style.css" rel="stylesheet" type="text/css" />
+   <link href="/joomla3/hotel/media/com_solidres/assets/css/main.min.css" rel="stylesheet" type="text/css" />
+   <style type="text/css">
+
+                .childcontent { padding: 16px; }
+               .childcontent .gkcol { width: 200px; }
+            
+
+body,
+button,
+.button,
+select,
+textarea,
+input[type="submit"],
+input[type="button"],
+input[type="text"],
+input[type="password"],
+input[type="url"],
+input[type="email"],
+cite small,
+blockquote > cite,
+#gkHeaderNav .gkMainMenu .gkmenu > li div.childcontent li,
+h3.roomtype_name > .label,
+.ui-widget,
+.breakdown,
+#gkHeaderSidebar .box .header > small,
+label.error,
+.dropdown-menu,
+#gk-menu-overlay-wrap,
+#sr-reservation-form-guest label.checkbox { font-family: 'Open Sans', Arial, sans-serif; }
+
+h1,h2,h3,h4,h5,h6,
+select,
+#gkLogo,
+.box.big-title .header,
+cite,
+.gkIsWrapper-gk_hotel_tabs figcaption h2,
+.gkIsWrapper-gk_hotel_tabs figcaption small,
+blockquote,
+.blog-page .header .item-title,
+ol.item-list li,
+.profile fieldset legend, .profile-edit fieldset legend,
+.min_tariff, .normal_tariff,
+#gkHeaderSidebar .box .header,
+#sr-checkavailability-form .datefield,
+.button-row,
+#acymodifyform legend,
+#cc-modal #cc-modal-wrapper h2, #cc-settingsmodal-wrapper h2 { font-family: 'PT Serif', Arial, sans-serif; }
+
+.gkMainMenu,
+.box .header,
+.gkTab,
+.gkIsWrapper-gk_hotel_tabs figcaption .readon,
+.itemSubheader h3,
+.item-desc,
+.blog-page .item-view .cat-item-date,
+.blog-page .item-view .cat-item-author,
+.user-page .item-author-details .item-desc,
+#gkFooterNav h3,
+.box.offers .nspHeader,
+.box.category-layout .nspHeader,
+.latest-page h2,
+.latest-page h3,
+.navbar-inner,
+.solidres_coupon h4 { font-family: 'Montserrat', Arial, sans-serif; }
+
+.blank { font-family: Arial, Helvetica, sans-serif; }
+
+@media screen and (max-width: 780px) {
+          #k2Container .itemsContainer { width: 100%!important; } 
+          .cols-2 .column-1,
+          .cols-2 .column-2,
+          .cols-3 .column-1,
+          .cols-3 .column-2,
+          .cols-3 .column-3,
+          .demo-typo-col2,
+          .demo-typo-col3,
+          .demo-typo-col4 {width: 100%; }
+          }
+#gkHeaderSidebar { width: 45%; }
+
+#gkSidebar { width: 45%; }
+
+#gkContent { width: 55%; }
+
+#gkContentWrap { width: 100%; }
+
+.gkPage, #gkHeaderNav .gkPage, #gkMainbody .content { max-width: 1240px; }
+
+#menu263 > div,
+#menu263 > div > .childcontent-inner { width: 200px; }
+
+#menu1097 > div,
+#menu1097 > div > .childcontent-inner { width: 200px; }
+
+      #gkIs-gk-is-893.gkIsWrapper-gk_hotel_tabs {
+         min-height: 720px;
+      }
+      
+      #gkIs-gk-is-893.gkIsWrapper-gk_hotel_tabs,
+      #gkIs-gk-is-893.gkIsWrapper-gk_hotel_tabs .gkIsSlide {
+         height: 720px;
+         max-width: 2000px;
+      }
+      
+      #gkIs-gk-is-893.gkIsWrapper-gk_hotel_tabs figure,
+      #gkIs-gk-is-893.gkIsWrapper-gk_hotel_tabs .gkIsPreloader {
+         max-width: 2000px;
+      }
+      
+      @media (max-width: 1040px) {
+         #gkIs-gk-is-893.gkIsWrapper-gk_hotel_tabs {
+            min-height: 542px;
+         }
+         
+         #gkIs-gk-is-893.gkIsWrapper-gk_hotel_tabs,
+         #gkIs-gk-is-893.gkIsWrapper-gk_hotel_tabs .gkIsSlide {
+            height: 542px;
+            max-width: 1040px;
+         }
+         
+         #gkIs-gk-is-893.gkIsWrapper-gk_hotel_tabs figure,
+         #gkIs-gk-is-893.gkIsWrapper-gk_hotel_tabs .gkIsPreloader {
+            max-width: 1040px;
+         }
+      }
+      
+      @media (max-width: 640px) {
+         #gkIs-gk-is-893.gkIsWrapper-gk_hotel_tabs {
+            min-height: 334px;
+         }
+         
+         #gkIs-gk-is-893.gkIsWrapper-gk_hotel_tabs,
+         #gkIs-gk-is-893.gkIsWrapper-gk_hotel_tabs .gkIsSlide {
+            height: 334px;
+            max-width: 640px;
+         }
+         
+         #gkIs-gk-is-893.gkIsWrapper-gk_hotel_tabs figure,
+         #gkIs-gk-is-893.gkIsWrapper-gk_hotel_tabs .gkIsPreloader {
+            max-width: 640px;
+         }
+      }
+      
+      #gkIs-gk-is-882.gkIsWrapper-gk_hotel_tabs {
+         min-height: 580px;
+      }
+      
+      #gkIs-gk-is-882.gkIsWrapper-gk_hotel_tabs,
+      #gkIs-gk-is-882.gkIsWrapper-gk_hotel_tabs .gkIsSlide {
+         height: 580px;
+         max-width: 1240px;
+      }
+      
+      #gkIs-gk-is-882.gkIsWrapper-gk_hotel_tabs figure,
+      #gkIs-gk-is-882.gkIsWrapper-gk_hotel_tabs .gkIsPreloader {
+         max-width: 1240px;
+      }
+      
+      @media (max-width: 1040px) {
+         #gkIs-gk-is-882.gkIsWrapper-gk_hotel_tabs {
+            min-height: 480px;
+         }
+         
+         #gkIs-gk-is-882.gkIsWrapper-gk_hotel_tabs,
+         #gkIs-gk-is-882.gkIsWrapper-gk_hotel_tabs .gkIsSlide {
+            height: 480px;
+            max-width: 1040px;
+         }
+         
+         #gkIs-gk-is-882.gkIsWrapper-gk_hotel_tabs figure,
+         #gkIs-gk-is-882.gkIsWrapper-gk_hotel_tabs .gkIsPreloader {
+            max-width: 1040px;
+         }
+      }
+      
+      @media (max-width: 640px) {
+         #gkIs-gk-is-882.gkIsWrapper-gk_hotel_tabs {
+            min-height: 334px;
+         }
+         
+         #gkIs-gk-is-882.gkIsWrapper-gk_hotel_tabs,
+         #gkIs-gk-is-882.gkIsWrapper-gk_hotel_tabs .gkIsSlide {
+            height: 334px;
+            max-width: 640px;
+         }
+         
+         #gkIs-gk-is-882.gkIsWrapper-gk_hotel_tabs figure,
+         #gkIs-gk-is-882.gkIsWrapper-gk_hotel_tabs .gkIsPreloader {
+            max-width: 640px;
+         }
+      }
+      
+      #gkIs-gk-is-878.gkIsWrapper-gk_hotel_tabs {
+         min-height: 720px;
+      }
+      
+      #gkIs-gk-is-878.gkIsWrapper-gk_hotel_tabs,
+      #gkIs-gk-is-878.gkIsWrapper-gk_hotel_tabs .gkIsSlide {
+         height: 720px;
+         max-width: 2000px;
+      }
+      
+      #gkIs-gk-is-878.gkIsWrapper-gk_hotel_tabs figure,
+      #gkIs-gk-is-878.gkIsWrapper-gk_hotel_tabs .gkIsPreloader {
+         max-width: 2000px;
+      }
+      
+      @media (max-width: 1040px) {
+         #gkIs-gk-is-878.gkIsWrapper-gk_hotel_tabs {
+            min-height: 542px;
+         }
+         
+         #gkIs-gk-is-878.gkIsWrapper-gk_hotel_tabs,
+         #gkIs-gk-is-878.gkIsWrapper-gk_hotel_tabs .gkIsSlide {
+            height: 542px;
+            max-width: 1040px;
+         }
+         
+         #gkIs-gk-is-878.gkIsWrapper-gk_hotel_tabs figure,
+         #gkIs-gk-is-878.gkIsWrapper-gk_hotel_tabs .gkIsPreloader {
+            max-width: 1040px;
+         }
+      }
+      
+      @media (max-width: 640px) {
+         #gkIs-gk-is-878.gkIsWrapper-gk_hotel_tabs {
+            min-height: 334px;
+         }
+         
+         #gkIs-gk-is-878.gkIsWrapper-gk_hotel_tabs,
+         #gkIs-gk-is-878.gkIsWrapper-gk_hotel_tabs .gkIsSlide {
+            height: 334px;
+            max-width: 640px;
+         }
+         
+         #gkIs-gk-is-878.gkIsWrapper-gk_hotel_tabs figure,
+         #gkIs-gk-is-878.gkIsWrapper-gk_hotel_tabs .gkIsPreloader {
+            max-width: 640px;
+         }
+      }
+      
+   </style>
+   <script type="application/json" class="joomla-script-options new">{"system.paths":{"root":"\/joomla3\/hotel","base":"\/joomla3\/hotel"},"system.keepalive":{"interval":840000,"uri":"\/joomla3\/hotel\/component\/ajax\/?format=json"}}</script>
+   <script src="/joomla3/hotel/cache/gk/2111c4401db97b5ff5ba6ed51bee0f64.js.php" type="text/javascript"></script>
+   <script src="https://demo.gavick.com/joomla3/hotel/templates/gk_hotel/js/scrollreveal.js" type="text/javascript"></script>
+   <script type="text/javascript">
+
+         (function() {
+            Solidres.options.load({
+               "Hub":0,
+               "ChannelManager":0,
+            });
+          })();
+      
+jQuery(function($) {
+          $('.hasTip').each(function() {
+            var title = $(this).attr('title');
+            if (title) {
+               var parts = title.split('::', 2);
+               var mtelement = document.id(this);
+               mtelement.store('tip:title', parts[0]);
+               mtelement.store('tip:text', parts[1]);
+            }
+         });
+         var JTooltips = new Tips($('.hasTip').get(), {"maxTitleChars": 50,"fixed": false});
+      });
+      jQuery(function($) {
+         SqueezeBox.initialize({});
+         SqueezeBox.assign($('a.modal').get(), {
+            parse: 'rel'
+         });
+      });
+
+      window.jModalClose = function () {
+         SqueezeBox.close();
+      };
+      
+      // Add extra modal close functionality for tinyMCE-based editors
+      document.onreadystatechange = function () {
+         if (document.readyState == 'interactive' && typeof tinyMCE != 'undefined' && tinyMCE)
+         {
+            if (typeof window.jModalClose_no_tinyMCE === 'undefined')
+            {   
+               window.jModalClose_no_tinyMCE = typeof(jModalClose) == 'function'  ?  jModalClose  :  false;
+               
+               jModalClose = function () {
+                  if (window.jModalClose_no_tinyMCE) window.jModalClose_no_tinyMCE.apply(this, arguments);
+                  tinyMCE.activeEditor.windowManager.close();
+               };
+            }
+      
+            if (typeof window.SqueezeBoxClose_no_tinyMCE === 'undefined')
+            {
+               if (typeof(SqueezeBox) == 'undefined')  SqueezeBox = {};
+               window.SqueezeBoxClose_no_tinyMCE = typeof(SqueezeBox.close) == 'function'  ?  SqueezeBox.close  :  false;
+      
+               SqueezeBox.close = function () {
+                  if (window.SqueezeBoxClose_no_tinyMCE)  window.SqueezeBoxClose_no_tinyMCE.apply(this, arguments);
+                  tinyMCE.activeEditor.windowManager.close();
+               };
+            }
+         }
+      };
+      
+ $GKMenu = { height:true, width:false, duration: 150 };
+$GK_TMPL_URL = "https://demo.gavick.com/joomla3/hotel/templates/gk_hotel";
+
+$GK_URL = "https://demo.gavick.com/joomla3/hotel/";
+
+try {$Gavick;}catch(e){$Gavick = {};};$Gavick["gkIs-gk-is-893"] = { "animSpeed": 500, "animInterval": 5000, "slideLinks": 0 };
+try {$Gavick;}catch(e){$Gavick = {};};$Gavick["gkIs-gk-is-882"] = { "animSpeed": 500, "animInterval": 5000, "slideLinks": 1 };
+   Solidres.jQuery(function($) {
+      var minLengthOfStay = 1;
+      var checkout = $(".checkout_datepicker_inline_module").datepicker({
+         minDate : "+1",
+         numberOfMonths : 1,
+         showButtonPanel : true,
+         dateFormat : "dd/mm/yy",
+         firstDay: 1,
+         
+         onSelect: function() {
+            $("#sr-checkavailability-form input[name='checkout']").val($.datepicker.formatDate("yy-mm-dd", $(this).datepicker("getDate")));
+            $("#sr-checkavailability-form .checkout_module").text($.datepicker.formatDate("dd/mm/yy", $(this).datepicker("getDate")));
+            $("#sr-checkavailability-form .checkout_datepicker_inline_module").slideToggle();
+            $("#sr-checkavailability-form .checkin_module").removeClass("disabledCalendar");
+         }
+      });
+      var checkin = $("#sr-checkavailability-form .checkin_datepicker_inline_module").datepicker({
+         minDate : "+0d",
+         
+         numberOfMonths : 1,
+         showButtonPanel : true,
+         dateFormat : "dd/mm/yy",
+         
+         onSelect : function() {
+            var currentSelectedDate = $(this).datepicker("getDate");
+            var checkoutMinDate = $(this).datepicker("getDate", "+1d");
+            checkoutMinDate.setDate(checkoutMinDate.getDate() + minLengthOfStay);
+            checkout.datepicker( "option", "minDate", checkoutMinDate );
+            checkout.datepicker( "setDate", checkoutMinDate);
+
+            $("#sr-checkavailability-form input[name='checkin']").val($.datepicker.formatDate("yy-mm-dd", currentSelectedDate));
+            $("#sr-checkavailability-form input[name='checkout']").val($.datepicker.formatDate("yy-mm-dd", checkoutMinDate));
+
+            $("#sr-checkavailability-form .checkin_module").text($.datepicker.formatDate("dd/mm/yy", currentSelectedDate));
+            $("#sr-checkavailability-form .checkout_module").text($.datepicker.formatDate("dd/mm/yy", checkoutMinDate));
+            $("#sr-checkavailability-form .checkin_datepicker_inline_module").slideToggle();
+            $("#sr-checkavailability-form .checkout_module").removeClass("disabledCalendar");
+         },
+         firstDay: 1
+      });
+      $("#sr-checkavailability-form .ui-datepicker").addClass("notranslate");
+      $("#sr-checkavailability-form .checkin_module").click(function() {
+         if (!$(this).hasClass("disabledCalendar")) {
+            $("#sr-checkavailability-form .checkin_datepicker_inline_module").slideToggle("slow", function() {
+               if ($(this).is(":hidden")) {
+                  $("#sr-checkavailability-form .checkout_module").removeClass("disabledCalendar");
+               } else {
+                  $("#sr-checkavailability-form .checkout_module").addClass("disabledCalendar");
+               }
+            });
+         }
+      });
+   
+      $("#sr-checkavailability-form .checkout_module").click(function() {
+         if (!$(this).hasClass("disabledCalendar")) {
+            $("#sr-checkavailability-form .checkout_datepicker_inline_module").slideToggle("slow", function() {
+               if ($(this).is(":hidden")) {
+                  $("#sr-checkavailability-form .checkin_module").removeClass("disabledCalendar");
+               } else {
+                  $("#sr-checkavailability-form .checkin_module").addClass("disabledCalendar");
+               }
+            });
+         }
+      });
+
+      $(".room_quantity").change(function() {
+         var curQuantity = $(this).val();
+         $(".room_num_row").each(function( index ) {
+            var index2 = index + 1;
+            if (index2 <= curQuantity) {
+               $("#room_num_row_" + index2).show();
+               $("#room_num_row_" + index2 + " select").removeAttr("disabled");
+            } else {
+               $("#room_num_row_" + index2).hide();
+               $("#room_num_row_" + index2 + " select").attr("disabled", "disabled");
+            }
+         });
+      });
+
+      if ($(".room_quantity").val() > 0) {
+         $(".room_quantity").trigger("change");
+      }
+    });
+
+try {$Gavick;}catch(e){$Gavick = {};};$Gavick["gkIs-gk-is-878"] = { "animSpeed": 500, "animInterval": 5000, "slideLinks": 1 };
+   </script>
+   <meta property="og:title" content="" />
+   <meta property="og:type" content="website" />
+   <meta property="og:image" content="https://demo.gavick.com/joomla3/hotel/" />
+   <meta property="og:site_name" content="" />
+   <meta property="og:description" content="" />
+   <link rel="apple-touch-icon" href="https://demo.gavick.com/joomla3/hotel/templates/gk_hotel/images/touch-device.png">
+   <link rel="apple-touch-icon-precomposed" href="https://demo.gavick.com/joomla3/hotel/templates/gk_hotel/images/touch-device.png">
+
+    <link rel="stylesheet" href="https://demo.gavick.com/joomla3/hotel/templates/gk_hotel/css/small.desktop.css" media="(max-width: 1920px)" />
+<link rel="stylesheet" href="https://demo.gavick.com/joomla3/hotel/templates/gk_hotel/css/tablet.css" media="(max-width: 1040px)" />
+<link rel="stylesheet" href="https://demo.gavick.com/joomla3/hotel/templates/gk_hotel/css/small.tablet.css" media="(max-width: 840px)" />
+<link rel="stylesheet" href="https://demo.gavick.com/joomla3/hotel/templates/gk_hotel/css/mobile.css" media="(max-width: 640px)" />
+
+<!--[if IE 9]>
+<link rel="stylesheet" href="https://demo.gavick.com/joomla3/hotel/templates/gk_hotel/css/ie/ie9.css" type="text/css" />
+<![endif]-->
+
+<!--[if IE 8]>
+<link rel="stylesheet" href="https://demo.gavick.com/joomla3/hotel/templates/gk_hotel/css/ie/ie8.css" type="text/css" />
+<![endif]-->
+
+<!--[if lte IE 7]>
+<link rel="stylesheet" href="https://demo.gavick.com/joomla3/hotel/templates/gk_hotel/css/ie/ie7.css" type="text/css" />
+<![endif]-->
+
+<!--[if lte IE 9]>
+<script type="text/javascript" src="https://demo.gavick.com/joomla3/hotel/templates/gk_hotel/js/ie.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type="text/javascript" src="https://demo.gavick.com/joomla3/hotel/templates/gk_hotel/js/respond.js"></script>
+<script type="text/javascript" src="https://demo.gavick.com/joomla3/hotel/templates/gk_hotel/js/selectivizr.js"></script>
+<script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->       
+   </head>
+<body class="frontpage"  data-tablet-width="1040" data-mobile-width="640" data-zoom-size="150" data-parallax="true">   
+      
+      
+   
+   
+   <div id="gkBg">   
+      
+       <header id="gkHeader" class="gk-clearfix">      
+         <div id="gkHeaderNav" class="gk-clearfix gk-fixed" data-fixed="1">
+                 <div>
+                 
+          <a href="https://demo.gavick.com/joomla3/hotel/" id="gkLogo" class="css">
+        GK Hotel     </a>
+                      
+                         <div id="gkLang">
+                  
+<div class="mod-languages">
+   <ul class="lang-inline">
+      <li dir="ltr">
+         <a href="/joomla3/hotel/index.php/theme-features/template-articles/134-language-switcher">PL</a>
+      </li>
+      <li class="lang-active" dir="ltr">
+         <a href="/joomla3/hotel/index.php/theme-features/template-articles/134-language-switcher">EN</a>
+      </li>
+                <li dir="ltr">
+         <a href="/joomla3/hotel/index.php/theme-features/template-articles/134-language-switcher">DE</a>
+      </li>
+   </ul>
+</div>
+
+             </div>
+             
+                         <div id="gkTopInfo">
+                  
+<p><i class="gk-icon-headset"></i> <a href="tel:1-123-456-789">1-123-456-789</a></p>
+<p><i class="gk-icon-marker"></i> 789 Linden Street New Lenox, MA 012345</p>
+
+             </div>
+             
+                                     <nav class="gkMainMenu gkMenu" data-duration="150" data-opacity="1" data-height="1" data-width="0">
+<ul class="gkmenu level0"><li  class="first active"><a href="https://demo.gavick.com/joomla3/hotel/"  class=" first active" id="menu640" title=" Home Menu Item" >Home</a></li><li  class="haschild"><a href="/joomla3/hotel/theme-features"  class=" haschild" id="menu263"  >Features</a><div class="childcontent has-cols-1">
+<div class="childcontent-inner">
+<div class="gkcol gkcol1  first"><ul class="gkmenu level1"><li  class="first"><a href="/joomla3/hotel/theme-features/typo"  class=" first" id="menu1074"  >Typography</a></li><li ><a href="/joomla3/hotel/?itemId=99999"  id="menu105"  >Error page</a></li><li ><a href="/joomla3/hotel/theme-features/search-page"  id="menu1077"  >Search page 1</a></li><li ><a href="/joomla3/hotel/theme-features/search-page-com-finder"  id="menu1078"  >Search page 2</a></li><li ><a href="/joomla3/hotel/theme-features/module-variations"  id="menu1036"  >Module variations</a></li><li ><a href="/joomla3/hotel/theme-features/module-positions"  id="menu1109"  >Module positions</a></li><li ><a href="/joomla3/hotel/theme-features/2014-08-05-11-51-4"  id="menu1037"  >Joomla blog</a></li><li  class="last haschild"><a href="#"  class=" last haschild" id="menu1097"  >Acymailing</a><div class="childcontent has-cols-1">
+<div class="childcontent-inner">
+<div class="gkcol gkcol1  first"><ul class="gkmenu level2"><li  class="first"><a href="/joomla3/hotel/theme-features/acymailing/mailing-list-archive"  class=" first" id="menu1098"  >Mailing list archive</a></li><li ><a href="/joomla3/hotel/theme-features/acymailing/mailing-list-all"  id="menu1099"  >Mailing list - All</a></li><li  class="last"><a href="/joomla3/hotel/theme-features/acymailing/user-page"  class=" last" id="menu1100"  >User page</a></li></ul></div>
+</div>
+</div></li></ul></div>
+</div>
+</div></li><li ><a href="/joomla3/hotel/gallery"  id="menu1076"  >Gallery</a></li><li ><a href="/joomla3/hotel/solidres"  id="menu1087"  >Solidres</a></li><li ><a href="/joomla3/hotel/blog"  id="menu1042"  >Blog</a></li><li ><a href="/joomla3/hotel/contact"  id="menu1108"  >Contact</a></li><li  class="last gk-login-popup"><a href="/joomla3/hotel/login-page"  class=" last gk-login-popup" id="menu1043"  >Log in</a></li></ul>
+</nav>                                  
+                                  <div id="gkMobileMenu" class="gkPage">
+                     <span id="gk-mobile-menu-text">Menu</span>
+                     <i id="static-aside-menu-toggler"></i>
+                 </div>
+                                  
+                                  
+                 </div>
+          </div>
+       </header>
+
+              <div id="gkHeaderMod" class="gk-clearfix">
+          <div 
+   id="gkIs-gk-is-878" 
+   class="gkIsWrapper-gk_hotel_tabs"
+         data-pagination="disabled"
+   data-count="2"
+   data-mode="slideshow"
+>
+   <div class="gkIsPreloader"></div>
+
+   
+                  <figure data-url="https://demo.gavick.com/joomla3/hotel/images/demo/slide-1.jpg" data-link="#1" data-zindex="2" data-title="Five-star quality in a hotel of four stars.">
+            
+         <figcaption class="gkPage mode-slideshow">
+            <div>
+                                 <small><a href="#1">
+Discover a hotel that defines a new dimension of luxury.</a></small>
+                  <h2><a href="#1">Five-star quality in a hotel of four stars.</a></h2>
+                                    <a href="#1" class="readon">Discover now</a>
+                                             </div>
+         </figcaption>
+               </figure>
+                     <figure data-url="https://demo.gavick.com/joomla3/hotel/images/demo/slide-2.jpg" data-link="#2" data-zindex="1" data-title="Catchy Joomla theme for hotels, museums">
+            
+         <figcaption class="gkPage mode-slideshow">
+            <div>
+                                 <small><a href="#2">Built-in support for Solidres - an effective booking solution</a></small>
+                  <h2><a href="#2">Catchy Joomla theme for hotels, museums</a></h2>
+                                    <a href="#2" class="readon">Read more</a>
+                                             </div>
+         </figcaption>
+               </figure>
+      
+   
+   </div>
+
+          
+                    <div id="gkHeaderSidebarWrapper" class="gkPage">
+             <div id="gkHeaderSidebar">
+                <div class="box "><div class="box-wrap"><h3 class="header"><span>Book Now</span><small>When would you like to stay villa?</small></h3><div class="content">
+<form id="sr-checkavailability-form" action="/joomla3/hotel/#form" method="GET" class="form-stacked sr-validate">
+    <fieldset>
+        <input name="id" value="1" type="hidden" />
+       <div class="gk-sr-arrival-data">
+          <div class="gk-sr-check-date">
+             <label>
+                Check-in             </label>
+             <div class="checkin_module datefield">
+                10/11/2017             </div>
+             <div class="checkin_datepicker_inline_module datepicker_inline" style="display: none"></div>
+                          <input type="hidden" name="checkin" value="2017-11-10" />
+         </div>
+         
+          <div class="gk-sr-check-date">
+             <label>
+                Check-out             </label>
+             <div class="checkout_module datefield">
+                11/11/2017             </div>
+             <div class="checkout_datepicker_inline_module datepicker_inline" style="display: none"></div>
+                          <input type="hidden" name="checkout" value="2017-11-12" />
+          </div>
+   
+                  <div class="gk-sr-check-rooms">
+            <label>Rooms</label>
+            <select class="span12 room_quantity" name="room_quantity">
+                                 <option  value="1">1</option>
+                                 <option  value="2">2</option>
+                                 <option  value="3">3</option>
+                                 <option  value="4">4</option>
+                                 <option  value="5">5</option>
+                           </select>
+         </div>
+               </div>
+      
+                         <div class="row-fluid room-list">
+             <div class="room_num_row" id="room_num_row_1" style="display: none">
+                <dl>
+                   <dt>
+                      Room 1                   </dt>
+                   <dd>
+                      <label>Adults</label>
+                      <select disabled class="span12" name="room_opt[1][adults]">
+                                                     <option  value="1">1</option>
+                                                     <option  value="2">2</option>
+                                               </select>
+                   </dd>
+                   <dd>
+                      <label>Children</label>
+                      <select disabled class="span12" name="room_opt[1][children]">
+                                                     <option  value="0">0</option>
+                                                     <option  value="1">1</option>
+                                               </select>
+                   </dd>
+                </dl>
+             </div>
+         </div>
+                   <div class="row-fluid room-list">
+             <div class="room_num_row" id="room_num_row_2" style="display: none">
+                <dl>
+                   <dt>
+                      Room 2                   </dt>
+                   <dd>
+                      <label>Adults</label>
+                      <select disabled class="span12" name="room_opt[2][adults]">
+                                                     <option  value="1">1</option>
+                                                     <option  value="2">2</option>
+                                               </select>
+                   </dd>
+                   <dd>
+                      <label>Children</label>
+                      <select disabled class="span12" name="room_opt[2][children]">
+                                                     <option  value="0">0</option>
+                                                     <option  value="1">1</option>
+                                               </select>
+                   </dd>
+                </dl>
+             </div>
+         </div>
+                   <div class="row-fluid room-list">
+             <div class="room_num_row" id="room_num_row_3" style="display: none">
+                <dl>
+                   <dt>
+                      Room 3                   </dt>
+                   <dd>
+                      <label>Adults</label>
+                      <select disabled class="span12" name="room_opt[3][adults]">
+                                                     <option  value="1">1</option>
+                                                     <option  value="2">2</option>
+                                               </select>
+                   </dd>
+                   <dd>
+                      <label>Children</label>
+                      <select disabled class="span12" name="room_opt[3][children]">
+                                                     <option  value="0">0</option>
+                                                     <option  value="1">1</option>
+                                               </select>
+                   </dd>
+                </dl>
+             </div>
+         </div>
+                   <div class="row-fluid room-list">
+             <div class="room_num_row" id="room_num_row_4" style="display: none">
+                <dl>
+                   <dt>
+                      Room 4                   </dt>
+                   <dd>
+                      <label>Adults</label>
+                      <select disabled class="span12" name="room_opt[4][adults]">
+                                                     <option  value="1">1</option>
+                                                     <option  value="2">2</option>
+                                               </select>
+                   </dd>
+                   <dd>
+                      <label>Children</label>
+                      <select disabled class="span12" name="room_opt[4][children]">
+                                                     <option  value="0">0</option>
+                                                     <option  value="1">1</option>
+                                               </select>
+                   </dd>
+                </dl>
+             </div>
+         </div>
+                   <div class="row-fluid room-list">
+             <div class="room_num_row" id="room_num_row_5" style="display: none">
+                <dl>
+                   <dt>
+                      Room 5                   </dt>
+                   <dd>
+                      <label>Adults</label>
+                      <select disabled class="span12" name="room_opt[5][adults]">
+                                                     <option  value="1">1</option>
+                                                     <option  value="2">2</option>
+                                               </select>
+                   </dd>
+                   <dd>
+                      <label>Children</label>
+                      <select disabled class="span12" name="room_opt[5][children]">
+                                                     <option  value="0">0</option>
+                                                     <option  value="1">1</option>
+                                               </select>
+                   </dd>
+                </dl>
+             </div>
+         </div>
+                     
+       <div>
+          <div class="action">
+             <button class="btn" type="submit">Check</button>
+          </div>
+      </div>
+    </fieldset>
+
+    <input type="hidden" name="option" value="com_solidres" />
+    <input type="hidden" name="task" value="reservationasset.checkavailability" />
+   <input type="hidden" name="Itemid" value="1087" />
+    <input type="hidden" name="0d4fa63ebb86f7358365b9114c7a69ea" value="1" /></form></div></div></div>
+             </div>
+          </div>
+                </div>
+          
+         
+      <div id="gkPageContent">
+                    
+                    
+          <div class="gkPage">    
+             <div data-sidebar-pos="right">
+                
+                                <div id="gkContent">               
+                                     
+                  
+                                    <section id="gkMainbody">
+                                          
+                                                <div class="box "><div class="box-wrap"><h3 class="header"><span>Modern Accommodations</span></h3><div class="content">
+<h2>Stay in luxury and style</h2>
+
+<div class="gk-cols" data-cols="2">
+<div class="gk-text-justified"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget urna at libero finibus pretium. Donec faucibus volutpat nisl ac placerat. Vestibulum odio turpis, volutpat at aliquet sit amet, volutpat eu lectus. Curabitur at enim at ipsum posuere eleifend. Nullam pharetra diam id mollis scelerisque. Sed erat mauris, sodales nec est a, tincidunt lacinia purus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></div>
+<div class="gk-text-justified"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget urna at libero finibus pretium. Donec faucibus volutpat nisl ac placerat. Vestibulum odio turpis, volutpat at aliquet sit amet, volutpat eu lectus. Curabitur at enim at ipsum posuere eleifend.<cite>"500 World’s Best Hotels 2015"<small>-Trip Magazine</small></cite></p></div>
+</div>
+
+<div class="gk-photo-grid offset-left">
+<figure class="gk-grid-1" data-sr="scale up 10%">
+<img src="/joomla3/hotel/images/demo/hotel3.jpg" alt="" />
+<figcaption>Luxury rooms</figcaption>
+</figure>
+
+<figure class="gk-grid-2" data-sr="scale up 10% and wait .15s">
+<img src="/joomla3/hotel/images/demo/hotel5.jpg" alt="" />
+<figcaption>Bathrooms</figcaption>
+</figure>
+
+<figure class="gk-grid-2" data-sr="scale up 10% and wait .3s">
+<img src="/joomla3/hotel/images/demo/hotel4.jpg" alt="" />
+<figcaption>Jacuzzi</figcaption>
+</figure>
+</div>
+</div></div></div>
+                                             
+                                       </section>
+                                    
+                                                 </div>
+                                
+                                <aside id="gkSidebar">
+                   <div>
+                      
+<div class="box "><div class="box-wrap"><div class="content">
+<div class="gk-photo-grid no-margin">
+<figure class="gk-grid-1" data-sr="scale up 10%">
+<img src="/joomla3/hotel/images/demo/hotel1.jpg" alt="" />
+</figure>
+<figure class="gk-grid-1" data-sr="scale up 10% and wait 0.15s">
+<img src="/joomla3/hotel/images/demo/hotel2.jpg" alt="" />
+</figure>
+</div>
+</div></div></div>
+
+<div class="box border-title"><div class="box-wrap"><h3 class="header"><span>Hotel Information</span></h3><div class="content">
+<ul class="gk-info">
+<li class="gk-info-col-2">
+<dl>
+<dt>Check-in:</dt>
+<dd><strong>2:00 pm</strong></dd>
+</dl>
+</li>
+<li>
+<dl class="gk-info-col-2">
+<dt>Check-out:</dt>
+<dd><strong>12:00 am</strong></dd>
+</dl>
+</li>
+<li>
+<dl>
+<dt>Smoking:</dt> 
+<dd>Non-Smoking</dd>
+</dl>
+</li>
+<li>
+<dl>
+<dt>Parking:</dt>
+<dd>Self parking: €30.00</dd>
+<dd>Valet: €50.00</dd>
+</dl>
+</li>
+<li>
+<dl>
+<dt>Pets:</dt>
+<dd>Service animals allowed: Yes</dd>
+<dd>Maximum Weight: 50 lbs</dd>
+</dl>
+</li>
+</ul>
+</div></div></div>
+
+                   </div>
+                </aside>
+                             </div>
+         </div>
+      </div>
+      
+            <section id="gkBottom1" class="gk-clearfix gkPage">
+         <div  class="gk-clearfix">
+            <div class="box narrow title-centered gkmod-1"><div class="box-wrap"><h3 class="header"><span>Your satisfaction is our priority</span></h3><div class="content">
+<h3>At The Villa Bellucci, your rest experience begins and ends with a suite. Our standard accommodation is a suite starting at 720 sq. ft., nearly double the size of other Las Vegas hotel rooms.</h3>
+
+<div class="gk-cols" data-cols="2">
+<div class="gk-text-justified"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget urna at libero finibus pretium. Donec faucibus volutpat nisl ac placerat. Vestibulum odio turpis, volutpat at aliquet sit amet, volutpat eu lectus. Curabitur at enim at ipsum posuere eleifend. Nullam pharetra diam id mollis scelerisque. Sed erat mauris, sodales nec est a, tincidunt lacinia purus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></div>
+<div class="gk-text-justified"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget urna at libero finibus pretium. Donec faucibus volutpat nisl ac placerat. Vestibulum odio turpis, volutpat at aliquet sit amet, volutpat eu lectus. Curabitur at enim at ipsum posuere eleifend.</p><p>Nullam pharetra diam id mollis scelerisque. Sed erat mauris, sodales nec est a, tincidunt lacinia purus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+</div>
+</div>
+</div></div></div>
+         </div>
+      </section>
+             
+              <section id="gkBottom2" class="gk-clearfix gkPage">
+          <div  class="gk-clearfix">
+             <div class="box  gkmod-1"><div class="box-wrap"><div class="content"><div 
+   id="gkIs-gk-is-882" 
+   class="gkIsWrapper-gk_hotel_tabs"
+         data-pagination="bottom"
+   data-count="5"
+   data-mode="showcase"
+>
+   <div class="gkIsPreloader"></div>
+
+   
+                  <figure data-url="https://demo.gavick.com/joomla3/hotel/images/demo/s1.jpg" data-link="#1" data-zindex="5" data-title="Guest rooms &amp; suites">
+            
+         <figcaption class="gkPage mode-showcase">
+            <div>
+                                 <h2><a href="#1">Guest rooms &amp; suites</a></h2>
+                           </div>
+         </figcaption>
+               </figure>
+                     <figure data-url="https://demo.gavick.com/joomla3/hotel/images/demo/s2.jpg" data-link="#2" data-zindex="4" data-title="Lorem Ipsum 2">
+            
+         <figcaption class="gkPage mode-showcase">
+            <div>
+                                 <h2><a href="#2">Lorem Ipsum 2</a></h2>
+                           </div>
+         </figcaption>
+               </figure>
+                     <figure data-url="https://demo.gavick.com/joomla3/hotel/images/demo/s3.jpg" data-link="#3" data-zindex="3" data-title="Lorem Ipsum 3">
+            
+         <figcaption class="gkPage mode-showcase">
+            <div>
+                                 <h2><a href

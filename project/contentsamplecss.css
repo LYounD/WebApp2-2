@@ -1,0 +1,71 @@
+.sections {
+	font-family: "Open Sans", arial, "Apple SD Gothic Neo", "Noto Sans CJK KR", 본고딕, "KoPubDotum Medium", 나눔바른고딕, 나눔고딕, NanumGothic, 맑은고딕, "Malgun Gothic", sans-serif;
+	line-height: 1.5;
+	font-size: 0.9rem;
+}
+
+.sec_content{
+	width: 55%;
+}
+
+.paragraphs{
+	max-width: 1200px;
+	overflow: hidden;
+	float: left;
+	min-width: 600px;
+
+}
+
+.left_paragraph{
+	width: 44%;
+	text-align: justify;
+	float: left;
+	margin-left: 3%;
+	word-wrap: break-word;
+}
+
+.right_paragraph{
+	width: 44%;
+	text-align: justify;
+	float: right;
+	margin-left: 3%;
+	margin-right: 3%;
+	word-wrap: break-word;
+}
+
+blockquote {
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 1;
+}
+
+.accomodation{
+	width: 45%;
+	float: right;
+	min-width: 400px;
+
+	max-width: 600px;
+	border-left: 100px;
+	line-height: 1.9;
+}
+
+.center_picture{
+	width: 100%;
+	min-height: 280px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.left_picture{
+	box-sizing: border-box;
+	width: 49%;
+	
+
+}
+.right_picture{
+	box-sizing: border-box;
+	width: 49%;
+	
+}
+
