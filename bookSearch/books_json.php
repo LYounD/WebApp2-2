@@ -40,8 +40,10 @@ print "{\n  \"books\": [\n";
 $lines = file($BOOKS_FILE);
 for ($i = 0; $i < count($lines); $i++) {
 	list($title, $author, $book_category, $year, $price) = explode("|", trim($lines[$i]));
-	if ($book_category == $category) {
-		print "    {\"category\": \"$category\", \"title\": \"$title\", \"author\": \"$author\", \"year\": $year, \"price\": $price}\n";
+	if ($book_category == $category && $i < count($lines) - 1) {
+		print "\t\t{\"category\": \"$category\", \"title\": \"$title\", \"author\": \"$author\", \"year\": $year, \"price\": $price},\n";
+	} else if ($book_category == $category) {
+		print "\t\t{\"category\": \"$category\", \"title\": \"$title\", \"author\": \"$author\", \"year\": $year, \"price\": $price}\n";
 	}
 }
 print "  ]\n}\n";

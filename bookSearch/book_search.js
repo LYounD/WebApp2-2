@@ -17,7 +17,7 @@ window.onload = function() {
     		onSuccess : showBooks_JSON,
     		onFailure : ajaxFailed,
     		onException : ajaxFailed
-    	})
+    	});
     }
 };
 
@@ -48,7 +48,18 @@ function showBooks_XML(ajax) {
 }
 
 function showBooks_JSON(ajax) {
-	alert(ajax.responseText);
+	//alert(ajax.responseText);
+	var data = JSON.parse(ajax.responseText);
+	document.getElementById("books").innerHTML = ""
+	for (var i = 0; i < data.books.length ; i++){
+		var title = data.books[i].title;
+		var author = data.books[i].author;
+		var year = data.books[i].year;
+		var li = document.createElement("li");
+		li.innerHTML = title + ", by " + author + "(" + year +")";
+		document.getElementById("books").appendChild(li);
+	}
+
 }
 
 function ajaxFailed(ajax, exception) {
