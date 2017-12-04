@@ -38,11 +38,20 @@ print "{\n  \"books\": [\n";
 // 2. search all the books that matches the given category 
 // 3. generate the result in JSON data format 
 $lines = file($BOOKS_FILE);
+$last_book = 0;
+$count = 1;
 for ($i = 0; $i < count($lines); $i++) {
 	list($title, $author, $book_category, $year, $price) = explode("|", trim($lines[$i]));
-	if ($book_category == $category && $i < count($lines) - 1) {
+	if ($book_category == $category)
+		$last_book = $last_book + 1;
+}
+
+for ($i = 0; $i < count($lines); $i++) {
+	list($title, $author, $book_category, $year, $price) = explode("|", trim($lines[$i]));
+	if ($book_category == $category && $count < $last_book ) {
 		print "\t\t{\"category\": \"$category\", \"title\": \"$title\", \"author\": \"$author\", \"year\": $year, \"price\": $price},\n";
-	} else if ($book_category == $category) {
+		$count = $count + 1;
+	} elseif ($book_category == $category && $count == $last_book) {
 		print "\t\t{\"category\": \"$category\", \"title\": \"$title\", \"author\": \"$author\", \"year\": $year, \"price\": $price}\n";
 	}
 }

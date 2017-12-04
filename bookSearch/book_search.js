@@ -48,7 +48,7 @@ function showBooks_XML(ajax) {
 }
 
 function showBooks_JSON(ajax) {
-	//alert(ajax.responseText);
+	alert(ajax.responseText);
 	var data = JSON.parse(ajax.responseText);
 	document.getElementById("books").innerHTML = ""
 	for (var i = 0; i < data.books.length ; i++){
